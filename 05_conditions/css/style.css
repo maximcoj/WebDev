@@ -1,0 +1,19 @@
+@import url(reset.css);
+
+
+@keyframes borderLight {
+  from {border: 2px solid red;}
+  to {border: 2px solid blue;}
+}
+.imageBlock {
+  width: 200px;
+  height: 200px
+}
+
+.shortBio {
+  padding: 10px;
+}
+
+.animated {
+  animation: borderLight 1s linear infinite alternate;
+}
