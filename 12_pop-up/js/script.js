@@ -1,73 +1,29 @@
 
-// const button = document.querySelector("button");
-// const paragraph = document.querySelector("p");
+window.addEventListener('load', function() {
 
-// // let state = paragraph.style.display;
-// // console.log(state);
+	const request = document.querySelector(".request"); 
+	const popup = document.querySelector(".popup"); 
+	const closePopup = document.querySelector(".closePopup"); 
 
-// let state = "none";
+	const menu = document.querySelector(".menu"); 
+	const openMenu = document.querySelector(".openMenu"); 
+	const closeMenu = document.querySelector(".closeMenu"); 
 
-// button.addEventListener("click", function() {
-// 	if (state == "none") {
-// 		paragraph.style.display = "block";
-// 		state = "block";
-// 	} else{
-// 		paragraph.style.display = "none";
-// 		state = "none";
-// 	}
-// });
+	request.onclick = () => {
+		popup.style.display = "flex";
+	}
 
-// window.addEventListener('load', function() {
-// 	const button = document.querySelector("button");
-// 	const ball = document.querySelector(".ball");
-// 	const par = document.querySelector("p");
+	closePopup.onclick = () => {
+		popup.style.display = "none";
+	}
 
-// 	button.addEventListener('click', () => {
-// 		ball.style.animationPlayStat = 'running';
-// 	});
+	openMenu.onclick = () => {
+		menu.style.left = "0px";
+	}
 
-// 	window.onscroll = () => {
-// 		if(scrollY >= 500) {
-// 			console.log('Works!');
-// 		} else {
-// 			console.log('Gone!');
-// 		}
-		
-// 	}
-// });
+	closeMenu.onclick = () => {
+		menu.style.left = "-50vw";
+	}
 
-const button = document.querySelector("button"); 
-
-button.onclick = function () {
-	this.innerHTML = "Скрыть";
-}
-
-button.onclick = () => {
-	console.log(this); // this будет window
-}
-
-const request = document.querySelector(".request"); 
-const popup = document.querySelector(".popup"); 
-const closePopup = document.querySelector(".closePopup"); 
-
-const menu = document.querySelector(".menu"); 
-const openMenu = document.querySelector(".openMenu"); 
-const closeMenu = document.querySelector(".closeMenu"); 
-
-request.onclick = () => {
-	popup.style.display = "flex";
-}
-
-closePopup.onclick = () => {
-	popup.style.display = "none";
-}
-
-openMenu.onclick = () => {
-	menu.style.left = "0px";
-}
-
-closeMenu.onclick = () => {
-	menu.style.left = "-50vw";
-}
-
+});
 
