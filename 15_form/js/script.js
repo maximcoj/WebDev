@@ -1,8 +1,6 @@
-
-
 const form = document.forms[0];
 
-// quantility это name у input 
+// sinusNumber это name у input 
 form.onsubmit = function (e) {
 	e.preventDefault();
 	let sinNumber = form.elements.sinusNumber.value;
