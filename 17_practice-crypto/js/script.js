@@ -50,7 +50,7 @@ let scales = document.querySelectorAll(".scale");
 
 // для каждого числа вывожу столбик соответствующей длинны
 for (value in arrValues) {
-	scales[value].style.width = (arrValues[value] / highest) * 100 + "%"; ;
+	scales[value].style.width = (arrValues[value] / highest) * 100 + "%";
 }
 
 
