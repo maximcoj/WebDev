@@ -4,6 +4,6 @@ const form = document.forms[0];
 form.onsubmit = function (e) {
 	e.preventDefault();
 	let sinNumber = form.elements.sinusNumber.value;
-	console.log(Math.sin(sinNumber));
+	sinNumber = sinNumber * Math.PI/180;
 	return Math.sin(sinNumber);
 }
