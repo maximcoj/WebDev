@@ -50,7 +50,7 @@ let scales = document.querySelectorAll(".scale");
 
 // для каждого числа вывожу столбик соответствующей длинны
 for (value in arrValues) {
-	scales[value].style.width = (arrValues[value] / highest) * 100 + "%";
+	scales[value].style.width = (arrValues[value] / highest) * 100 + "%"; ;
 }
 
 
@@ -59,4 +59,3 @@ for (value in arrValues) {
 // 	ethereum.querySelector('.scale').style.width = (arrValues[1] / highest) * 100 + "%";
 // 	litecoin.querySelector('.scale').style.width = (arrValues[2] / highest) * 100 + "%";
 // }
-
